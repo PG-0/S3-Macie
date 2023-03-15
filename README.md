@@ -17,8 +17,7 @@ AWS infra components used in the Project: Macie, S3, SNS, EventBridge
 
 ---
 
-
-## Note: If Macie is not enabled in the account, you will need to uncomment the following in the terraform script. These are found in the Macie section towards the bottom of the code
+:warning: Note: If Macie is not enabled in the account, you will need to uncomment the following in the terraform script. These are found in the Macie section towards the bottom of the code `#f03c15`
 
 ```python
 resource "aws_macie2_account" "Macie-For-S3" {}
