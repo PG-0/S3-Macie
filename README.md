@@ -12,4 +12,14 @@ AWS infra components used in the Project: Macie, S3, SNS, EventBridge
 * SNS - Notificaiton service. Email is used for this project
 * Eventbridge - AWS service that triggers an alert once a Macie Job is run 
 
-Note: If Macie is not enabled in the account, you will need to uncomment the section in the terraform script " resource "aws_macie2_account" "Macie-For-S3" {}. You will need to uncomment "depends_on = [aws_macie2_account.Macie-For-S3]" under the Macie Section as well. 
+## Architecture Diagram
+
+
+## Note: If Macie is not enabled in the account, you will need to uncomment the following in the terraform script. These are found in the Macie section towards the bottom of the code
+
+```python
+resource "aws_macie2_account" "Macie-For-S3" {}
+depends_on = [aws_macie2_account.Macie-For-S3] 
+
+
+[https://ap-southeast-2.console.aws.amazon.com/macie/home?region=ap-southeast-2#getStarted](https://ap-southeast-2.console.aws.amazon.com/macie/home?region=ap-southeast-2#getStarted)
