@@ -13,7 +13,9 @@ AWS infra components used in the Project: Macie, S3, SNS, EventBridge
 * Eventbridge - AWS service that triggers an alert once a Macie Job is run 
 
 ## Architecture Diagram
+![Macie-S3-Project drawio](https://user-images.githubusercontent.com/12003721/225389029-30886970-6d31-4544-97db-ec396b9f8d8d.png)
 
+---
 
 ## Note: If Macie is not enabled in the account, you will need to uncomment the following in the terraform script. These are found in the Macie section towards the bottom of the code
 
